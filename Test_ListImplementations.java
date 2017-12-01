@@ -138,7 +138,12 @@ public class Test_ListImplementations {
 		test19_check_remove_abc(className,list);
 		
 	}
-
+	
+	/**
+	 * tests add(item)
+	 * @param className
+	 * @param list
+	 */
 	private static void test01_add_item(String className, ListADT<String> list) {
 		try{
 			list.add("item");
@@ -150,6 +155,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests size()
+	 * @param className
+	 * @param list
+	 */
 	private static void test02_size_test(String className, ListADT<String> list) {
 		try{
 			if(list.size() != 1) throw new Exception();
@@ -161,7 +171,12 @@ public class Test_ListImplementations {
 			System.out.println("should have returned 1, instead returned: " + list.size());
 		}
 	}
-
+	
+	/** 
+	 * tests isEmpty()
+	 * @param className
+	 * @param list
+	 */
 	private static void test03_isEmpty_test(String className, ListADT<String> list) {
 		try{
 			if(list.isEmpty()) throw new Exception();
@@ -173,6 +188,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests add for 100 items
+	 * @param className
+	 * @param list
+	 */
 	private static void test04_add_100_items(String className, ListADT<String> list) {
 		try{
 			for(int i = 0; i < 100; i++){
@@ -186,6 +206,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests size for new 101 item list
+	 * @param className
+	 * @param list
+	 */
 	private static void test05_size_is101(String className, ListADT<String> list) {
 		try{
 			if(list.size() != 101) throw new Exception();
@@ -198,6 +223,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests remove by removing last 51 items
+	 * @param className
+	 * @param list
+	 */
 	private static void test06_remove_last_51(String className, ListADT<String> list) {
 		try{
 			for(int i = 0; i < 51; i++){
@@ -211,6 +241,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/** 
+	 * tests size
+	 * @param className
+	 * @param list
+	 */
 	private static void test07_size_is50(String className, ListADT<String> list) {
 		try{
 			if(list.size() != 50) throw new Exception();
@@ -223,6 +258,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests isEmpty() for false case
+	 * @param className
+	 * @param list
+	 */
 	private static void test08_isEmpty_false(String className, ListADT<String> list) {
 		try{
 			if(list.isEmpty()) throw new Exception();
@@ -234,6 +274,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests remove first 50
+	 * @param className
+	 * @param list
+	 */
 	private static void test09_remove_first_50(String className, ListADT<String> list) {
 		try{
 			for(int i = 0; i < 50; i++){
@@ -247,6 +292,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests size() for empty list
+	 * @param className
+	 * @param list
+	 */
 	private static void test10_size_is0(String className, ListADT<String> list) {
 		try{
 			if(list.size() != 0) throw new Exception();
@@ -259,6 +309,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests isEmpty() for empty list
+	 * @param className
+	 * @param list
+	 */
 	private static void test11_isEmpty_true(String className, ListADT<String> list) {
 		try{
 			if(!list.isEmpty()) throw new Exception();

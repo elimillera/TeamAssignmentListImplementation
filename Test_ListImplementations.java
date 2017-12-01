@@ -284,18 +284,24 @@ public class Test_ListImplementations {
 	}
 
 	private static void test13_check_get_abc(String className, ListADT<String> list) {
+		String geta = "NULL";
+		String getb = "NULL";
+		String getc = "NULL";
 		try{
-			if(!list.get(0).equals("a")) throw new Exception();
-			if(!list.get(1).equals("b")) throw new Exception();
-			if(!list.get(2).equals("c")) throw new Exception();
+			geta = list.get(0);
+			getb = list.get(1);
+			getc = list.get(2);
+			if(!geta.equals("a")) throw new Exception();
+			if(!getb.equals("b")) throw new Exception();
+			if(!getc.equals("c")) throw new Exception();
 		}
 		catch(Exception e){
 			System.out.print(errmsg);
 			System.out.println("13");
 			System.out.println("get() returned wrong data in: " + className);
-			System.out.println("get(0) should be 'a', instead get(0) is: " + list.get(0));
-			System.out.println("get(1) should be 'b', instead get(1) is: " + list.get(1));
-			System.out.println("get(2) should be 'c', instead get(2) is: " + list.get(2));
+			System.out.println("get(0) should be 'a', instead get(0) is: " + geta);
+			System.out.println("get(1) should be 'b', instead get(1) is: " + getb);
+			System.out.println("get(2) should be 'c', instead get(2) is: " + getc);
 		}
 	}
 
@@ -331,18 +337,24 @@ public class Test_ListImplementations {
 	}
 
 	private static void test16_check_get_def(String className, ListADT<String> list) {
+		String getd = "NULL";
+		String gete = "NULL";
+		String getf = "NULL";
 		try{
-			if(!list.get(3).equals("d")) throw new Exception();
-			if(!list.get(4).equals("e")) throw new Exception();
-			if(!list.get(5).equals("f")) throw new Exception();
+			getd = list.get(3);
+			gete = list.get(4);
+			getf = list.get(5);
+			if(!getd.equals("d")) throw new Exception();
+			if(!gete.equals("e")) throw new Exception();
+			if(!getf.equals("f")) throw new Exception();
 		}
 		catch(Exception e){
 			System.out.print(errmsg);
 			System.out.println("16");
 			System.out.println("get() returned wrong data in: " + className);
-			System.out.println("get(3) should be 'd', instead get(3) is: " + list.get(3));
-			System.out.println("get(4) should be 'e', instead get(4) is: " + list.get(4));
-			System.out.println("get(5) should be 'f', instead get(5) is: " + list.get(5));
+			System.out.println("get(3) should be 'd', instead get(3) is: " + getd);
+			System.out.println("get(4) should be 'e', instead get(4) is: " + gete);
+			System.out.println("get(5) should be 'f', instead get(5) is: " + getf);
 		}
 	}
 

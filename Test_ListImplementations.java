@@ -1,3 +1,24 @@
+/////////////////////////////////////////////////////////////////////////////
+// Semester:         CS367 Fall 2017 
+// PROJECT:          Test List implementation
+// FILE:             Test_ListImplementations.java
+//
+// TEAM:    Cora Allen-Coleman, Eli Miller, Zong Guo, Brian Feilbach
+// Authors: Cora Allen-Coleman, Eli Miller, Zong Guo, Brian Feilbach
+// Author1: Cora Allen-Coleman, allencoleman@wisc.edu, coleman2, 001
+// Author2: Eli Miller, emiller43@wisc.edu, emiller43, 001
+// Author3: Zong Guo, zguo85@wisc.edu, zguo85, 001
+// Author4: Brian Feilbach, bfeilbach@wisc.edu, bfeilbach, 001
+//
+// ---------------- OTHER ASSISTANCE CREDITS 
+// Persons: Identify persons by name, relationship to you, and email. 
+// Describe in detail the the ideas and help they provided. 
+// 
+// Online sources: avoid web searches to solve your problems, but if you do 
+// search, be sure to include Web URLs and description of 
+// of any information you find. 
+//////////////////////////// 80 columns wide //////////////////////////////////
+
 import java.lang.reflect.Constructor;
 
 /**

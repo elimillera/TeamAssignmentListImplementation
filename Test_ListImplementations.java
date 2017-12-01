@@ -263,7 +263,7 @@ public class Test_ListImplementations {
 	}
 
 	/** 
-	 * tests size
+	 * tests size after remove
 	 * @param className
 	 * @param list
 	 */
@@ -346,6 +346,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests add(character)
+	 * @param className
+	 * @param list
+	 */
 	private static void test12_add_abc(String className, ListADT<String> list) {
 		try{
 			list.add("a");
@@ -359,6 +364,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests get(character) by index
+	 * @param className
+	 * @param list
+	 */
 	private static void test13_check_get_abc(String className, ListADT<String> list) {
 		String geta = "NULL";
 		String getb = "NULL";
@@ -381,6 +391,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests contains(character)
+	 * @param className
+	 * @param list
+	 */
 	private static void test14_check_contains_abc(String className, ListADT<String> list) {
 		try{
 			if(!list.contains("a")) throw new Exception();
@@ -399,6 +414,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests add(int, pos)
+	 * @param className
+	 * @param list
+	 */
 	private static void test15_check_add_wpos(String className, ListADT<String> list) {
 		try{
 			list.add(3, "d");
@@ -412,6 +432,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests get(num)
+	 * @param className
+	 * @param list
+	 */
 	private static void test16_check_get_def(String className, ListADT<String> list) {
 		String getd = "NULL";
 		String gete = "NULL";
@@ -434,6 +459,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests contains(char)
+	 * @param className
+	 * @param list
+	 */
 	private static void test17_check_contains_def(String className, ListADT<String> list) {
 		try{
 			if(!list.contains("d")) throw new Exception();
@@ -452,6 +482,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests remove(position)
+	 * @param className
+	 * @param list
+	 */
 	private static void test18_check_remove_def(String className, ListADT<String> list) {
 		String rmf = "NULL";
 		String rme = "NULL";
@@ -474,6 +509,11 @@ public class Test_ListImplementations {
 		}
 	}
 
+	/**
+	 * tests remove(0) to get first item in list
+	 * @param className
+	 * @param list
+	 */
 	private static void test19_check_remove_abc(String className, ListADT<String> list) {
 		String rma = "NULL";
 		String rmb = "NULL";
@@ -495,4 +535,7 @@ public class Test_ListImplementations {
 			System.out.println("remove(0) should have returned d, instead: " + rmc);
 		}
 	}
+	
+	
+	
 }

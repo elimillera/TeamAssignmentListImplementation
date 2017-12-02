@@ -158,6 +158,24 @@ public class Test_ListImplementations {
 		//check remove returns item. remove beginning.
 		test19_check_remove_abc(className,list);
 		
+		list = constructListOfString(className);
+		//NEW ARRAY
+		//Check if null, IllegalArgumentException is thrown
+		test20_check_null_add(className,list);
+		//Check if neg pos, IndexOutOfBounds.
+		test21_check_neg_add(className,list);
+		//Check get(size) returns IndexOutOfBounds
+		test22_check_out_of_bounds(className,list);
+		
+		list = constructListOfString(className);
+		//NEW ARRAY
+		//Check itterator.
+		//Check ittr returns
+		test23_check_itterator(className,list);
+		//Check ittr.hasNext()
+		test24_check_hasNext(className,list);
+		//Check ittr.next()
+		test25_check_next(className,list);
 	}
 	
 	/**
